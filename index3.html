@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question.3</title>
+  </head>
+  <body>
+    <h3>Thank You</h3>
+    <script>
+      function areRotations(str1, str2) {
+        if (str1.length !== str2.length) {
+          return false;
+        }
+        let concat = str1 + str1;
+        return concat.includes(str2);
+      }
+      let str1 = prompt("Enter the first string:");
+      let str2 = prompt("Enter the second string:");
+      if (areRotations(str1, str2)) {
+        alert("Given Strings are rotational");
+      } else {
+        alert("Given Strings are not rotational");
+      }
+    </script>
+  </body>
+</html>
